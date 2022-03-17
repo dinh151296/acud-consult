@@ -522,8 +522,11 @@ h2.title-big {
   font-weight: 500;
 }
 
+
+/* start responsive */
 @media only screen and (max-width: 767px) {
   .news-project .new-project {
     min-height: unset;
   }
 }
+/* end responsive */
