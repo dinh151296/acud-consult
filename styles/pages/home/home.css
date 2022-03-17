@@ -1,0 +1,297 @@
+/* home page style */
+
+@media only screen and (max-width: 991px) {
+  .new__list .new__item {
+    max-height: unset;
+  }
+}
+.new__list .new__item .img {
+  overflow: hidden;
+}
+.new__list .new__item .img a:hover img {
+  transform: scale(1.05);
+  opacity: 0.7;
+}
+.new__list .new__item .img img {
+  transition: 0.3s;
+}
+.new__list .new__item .desc {
+  padding: 12px;
+  line-height: 1.4;
+}
+.new__list .new__item .desc > h3 a {
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 14px;
+  line-height: 1.4;
+  transition: 0.2s;
+}
+.new__list .new__item .desc > h3 a:hover {
+  opacity: 0.7;
+}
+.new__list .new__item .desc > p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #333333;
+}
+@media only screen and (max-width: 767px) {
+  .title-row > h2 {
+    font-size: 22px;
+  }
+}
+.title-row a {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: var(--color-link);
+  white-space: nowrap;
+  transition: 0.2s;
+}
+@media only screen and (max-width: 767px) {
+  .title-row a {
+    font-size: 16px;
+  }
+}
+.title-row a > img {
+  max-width: 18px;
+  margin-left: 9px;
+}
+@media only screen and (max-width: 767px) {
+  .title-row a > img {
+    max-width: 16px;
+  }
+}
+.title-row a:hover {
+  opacity: 0.7;
+}
+.pagi-container {
+  position: relative;
+  left: 50%;
+  display: inline-flex;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.pagi-container button {
+  margin: 0 3px;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 2px;
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #1a77c7;
+  background-color: #ffffff;
+  border: 0.6px solid #cccccc;
+}
+.pagi-container button.active, .pagi-container button:hover {
+  background-color: #1a77c7;
+  color: #ffffff;
+}
+.pagi-container button.active path, .pagi-container button:hover path {
+  stroke: #ffffff;
+}
+.pagi-container button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.eyecatch {
+  width: 100%;
+  min-height: calc(100vh - 30px);
+  background-image: url(../../../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch {
+    padding: 20px 15px;
+  }
+}
+.eyecatch .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.eyecatch .wrap .eyecatch__r {
+  width: 50%;
+  max-width: 617px;
+}
+@media only screen and (max-width: 1024px) {
+  .eyecatch .wrap .eyecatch__r {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .eyecatch .wrap .eyecatch__r {
+    width: 80%;
+    min-width: 260px;
+    max-width: 500px;
+  }
+}
+.eyecatch .wrap .eyecatch__l {
+  justify-content: center;
+  width: 50%;
+}
+@media only screen and (max-width: 800px) {
+  .eyecatch .wrap .eyecatch__l {
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+.eyecatch .wrap .eyecatch__l > h1 {
+  color: #ffffff;
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch .wrap .eyecatch__l > h1 {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+.eyecatch .wrap .eyecatch__l ul.option > li {
+  max-width: 46px;
+  margin-right: 14px;
+  margin-bottom: 13px;
+}
+.eyecatch .wrap .eyecatch__l ul.option > li svg {
+  fill: #1a77c7;
+  transition: 0.2s;
+}
+.eyecatch .wrap .eyecatch__l ul.option > li:hover a > svg {
+  fill: #c2e20c;
+}
+.eyecatch .wrap .eyecatch__l > form .form-group input {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid #F8F8F8;
+  padding-left: 12px;
+  height: 46px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #f5f5f5;
+  outline: none;
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch .wrap .eyecatch__l > form .form-group input {
+    height: 40px;
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+.eyecatch .wrap .eyecatch__l > form .form-group {
+  position: relative;
+  max-width: 465px;
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch .wrap .eyecatch__l > form .form-group {
+    max-width: 320px;
+  }
+}
+.eyecatch .wrap .eyecatch__l > form .form-group > img {
+  position: absolute;
+  right: 15px;
+  max-width: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch .wrap .eyecatch__l > form .form-group > img {
+    max-width: 20px;
+  }
+}
+.eyecatch .wrap .eyecatch__l > form .form-group input::placeholder {
+  color: #f5f5f5;
+}
+.eyecatch .wrap .eyecatch__l .project {
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch .wrap .eyecatch__l .project {
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 350px;
+  }
+}
+.eyecatch .wrap .eyecatch__l .project li {
+  margin-bottom: 20px;
+}
+.eyecatch .wrap .eyecatch__l .project li a {
+  display: block;
+  margin-right: 36px;
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch .wrap .eyecatch__l .project li a {
+    margin-right: 10px;
+  }
+}
+.eyecatch .wrap .eyecatch__l .project li a .img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 12px;
+  border: 3.5px solid #C5C5C5;
+  border-radius: 50%;
+  background-color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch .wrap .eyecatch__l .project li a .img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.eyecatch .wrap .eyecatch__l .project li a .img > img {
+  max-width: 52px;
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch .wrap .eyecatch__l .project li a .img > img {
+    max-width: 30px;
+  }
+}
+.eyecatch .wrap .eyecatch__l .project li a > span {
+  color: #ffffff;
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+@media only screen and (max-width: 767px) {
+  .eyecatch .wrap .eyecatch__l .project li a > span {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .eyecatch .wrap .eyecatch__l .project li a > span {
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
+
+.wrap-content {
+  padding: 50px 0px 40px;
+}
+
+/*# sourceMappingURL=home.css.map */

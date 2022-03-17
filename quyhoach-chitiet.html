@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./images/shortcutsvg.svg" type="image/x-icon" />
+	<title>Quy hoạch chi tiết</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="./styles/common/common.css" type="text/css" />
+	<link rel="stylesheet" href="./styles/pages/kcn/kcn.css" type="text/css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-main">
+				<a class="header-logo" href="./index.html">
+					<img src="./images/logo-header.png" alt="header-logo" />
+				</a>
+				<div class="header-content">
+					<ul id="menu-list" class="menu-list">
+						<li class="menu-item">
+							<a href="./index.html">Trang chủ</a>
+						</li>
+						<li class="menu-item drop-down">
+							<a href="#">Tra cứu dự án</a>
+
+							<div class="drop-down-icon">
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M3.5 5.25L7 8.75L10.5 5.25"
+										stroke="white"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+
+							<ul class="drop-down-content">
+								<li class="drop-down-item">
+									<a href="project-total.html">Tổng hợp quy hoạch, dự án</a>
+								</li>
+								<li class="drop-down-item">
+									<a href="kcn.html">Quy hoạch chung</a>
+								</li>
+								<li class="drop-down-item">
+									<a href="kdt-dv.html">Quy hoạch phân khu</a>
+								</li>
+								<li class="drop-down-item">
+									<a href="kdt-dv.html">Quy hoạch chi tiết</a>
+								</li>
+								<li class="drop-down-item">
+									<a href="kdt-dv.html">Dự án đầu tư xây dựng Khu đô thị (KĐT)</a>
+								</li>
+								<li class="drop-down-item">
+									<a href="kdt-dv.html">Dự án đầu tư xây dựng Khu công nghiệp (KCN)</a>
+								</li>
+								<li class="drop-down-item">
+									<a href="kdt-dv.html">Dự án giao thông</a>
+								</li>
+								<li class="drop-down-item">
+									<a href="kdt-dv.html">Dự án kiến trúc</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item">
+							<a href="./project-manager.html"
+								>Quản lý hồ sơ dự án</a
+							>
+						</li>
+						<li class="menu-item">
+							<a href="news.html">Tin Tức</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">Liên hệ</a>
+						</li>
+					</ul>
+					<div class="user" data-toggle="modal" data-target="#modal-login">
+						<svg
+							width="14"
+							height="16"
+							viewBox="0 0 14 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="icon"
+								d="M7 8C9.20938 8 11 6.20937 11 4C11 1.79063 9.20938 0 7 0C4.79063 0 3 1.79063 3 4C3 6.20937 4.79063 8 7 8ZM9.8 9H9.27812C8.58437 9.31875 7.8125 9.5 7 9.5C6.1875 9.5 5.41875 9.31875 4.72188 9H4.2C1.88125 9 0 10.8813 0 13.2V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V13.2C14 10.8813 12.1187 9 9.8 9Z"
+								fill="white"
+							/>
+						</svg>
+					</div>
+					<button id="burger-menu" class="burger-menu d-none">
+						<div></div>
+						<div class="mt-1 mb-1"></div>
+						<div></div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="wrap-kcn-page kdt-dv">
+			<div class="container">
+				<div class="row  row-custom">
+					<div class="col-12 col-md-4 col-lg-3 col-custom">
+						<div class="aside__inner">
+							<form action="">
+								<div class="form-group d-flex align-items-center">
+									<select class="custom-select">
+										<option selected>Nhập tên quy hoạch - dự án</option>
+										<option value="1">...</option>
+										<option value="2">...</option>
+										<option value="3">...</option>
+									</select>
+									<div class="form-group__img">
+										<svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46Z" />
+											<path d="M29.1336 23.8451L33.0766 19.9021" stroke="white" stroke-width="2"
+												stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M33.0766 23.8451L29.1336 19.9021" stroke="white" stroke-width="2"
+												stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M14.8639 13.1429V31.3557H33.0767" stroke="white" stroke-width="2"
+												stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M17.6804 15.9593L14.864 13.1429L12.0476 15.9593" stroke="white"
+												stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path d="M30.2601 34.1722L33.0765 31.3557L30.2601 28.5393" stroke="white"
+												stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path d="M22.3743 17.2734V15.2081" stroke="white" stroke-width="2"
+												stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M24.4397 13.1429L22.3744 15.2082L20.4968 13.1429" stroke="white"
+												stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</div>
+								</div>
+								<div class="form-group d-flex align-items-center">
+									<input type="text" class="form-control" placeholder="Nhập địa chỉ tra cứu">
+									<div class="form-group__img">
+										<svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46Z" />
+											<path
+												d="M23 32.8571C28.4439 32.8571 32.8571 28.444 32.8571 23C32.8571 17.5561 28.4439 13.1429 23 13.1429C17.556 13.1429 13.1429 17.5561 13.1429 23C13.1429 28.444 17.556 32.8571 23 32.8571Z"
+												stroke="white" stroke-width="2" stroke-miterlimit="10" />
+											<path d="M23 13.1429V9.85715" stroke="white" stroke-width="2"
+												stroke-miterlimit="10" stroke-linecap="round" />
+											<path d="M23 36.1429V32.8571" stroke="white" stroke-width="2"
+												stroke-miterlimit="10" stroke-linecap="round" />
+											<path d="M13.1429 23H9.85715" stroke="white" stroke-width="2"
+												stroke-miterlimit="10" stroke-linecap="round" />
+											<path d="M36.1429 23H32.8571" stroke="white" stroke-width="2"
+												stroke-miterlimit="10" stroke-linecap="round" />
+											<path
+												d="M23 27.381C25.4195 27.381 27.381 25.4195 27.381 23C27.381 20.5805 25.4195 18.619 23 18.619C20.5805 18.619 18.619 20.5805 18.619 23C18.619 25.4195 20.5805 27.381 23 27.381Z"
+												fill="white" />
+										</svg>
+									</div>
+								</div>
+							</form>
+
+							<ul class="aside__menu">
+								<li>
+									<a href="project-total.html">Tổng hợp quy hoạch, dự án</a>
+								</li>
+								<li >
+									<a href="kcn.html">Quy hoạch chung</a>
+								</li>
+								<li>
+									<a href="kdt-dv.html">Quy hoạch phân khu</a>
+								</li>
+								<li class="menu__active">
+									<a href="kdt-dv.html">Quy hoạch chi tiết</a>
+								</li>
+								<li>
+									<a href="kdt-dv.html">Dự án đầu tư xây dựng KĐT</a>
+								</li>
+								<li>
+									<a href="kdt-dv.html">Dự án đầu tư xây dựng KCN</a>
+								</li>
+								<li>
+									<a href="kdt-dv.html">Dự án giao thông</a>
+								</li>
+								<li>
+									<a href="kdt-dv.html">Dự án kiến trúc</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-8  col-lg-9 col-custom mt-3">
+						<div class="row row-custom">
+							<div class="col-12  col-sm-6 col-lg-4 col-custom">
+								<div class="kcn__item">
+									<a href="kcn-detail01.html" class="thumbnail">
+										<img src="images/qh-detail01.jpg" alt="">
+									</a>
+									<h3>
+										<a href="kcn-detail01.html">
+											Quy hoạch chi tiết Bảo tàng Thiên nhiên Việt Nam
+										</a>
+									</h3>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 col-custom">
+								<div class="kcn__item">
+									<a href="kcn-detail01.html" class="thumbnail">
+										<img src="images/qh-detail02.jpg" alt="">
+									</a>
+									<h3>
+										<a href="kcn-detail01.html">
+											Hà Nội - QHCT - Quy hoạch chi tiết Cảng container Phù Đổng
+										</a>
+									</h3>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 col-custom">
+								<div class="kcn__item">
+									<a href="kcn-detail01.html" class="thumbnail">
+										<img src="images/kcn03.jpg" alt="">
+									</a>
+									<h3>
+										<a href="kcn-detail01.html">
+											Hà Nội - QHPK - Đô thị GS
+										</a>
+									</h3>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 col-custom">
+								<div class="kcn__item">
+									<a href="kcn-detail01.html" class="thumbnail">
+										<img src="images/kcn01.jpg" alt="">
+									</a>
+									<h3>
+										<a href="kcn-detail01.html">
+											Hà Nội - QHC - Huyện Ba Vì
+										</a>
+									</h3>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="pagi">
+									<div class="pagi-container">
+										<button class="super-prev">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M13 4L9 8L13 12" stroke="#484848" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M7 4L3 8L7 12" stroke="#484848" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button class="super-prev">
+											<svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M5 1L1 5L5 9" stroke="#484848" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button class="count active">1</button>
+										<button class="count">2</button>
+										<button class="next">
+											<svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 9L5 5L1 1" stroke="#484848" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button class="next">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M3 12L7 8L3 4" stroke="#484848" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M9 12L13 8L9 4" stroke="#484848" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="top-main">
+					<div class="footer__logo">
+						<img class="logo" src="./images/logo-footer.png" alt="logo-footer" />
+					</div>
+					<div class="info">
+						<div class="info-item place">
+							<img src="images/place-footer.svg" alt="place" />
+							<div class="place__text">
+								<h3>Trụ sở chính:</h3>
+								<p>
+									Tầng 1 Nhà E - Vinaconex 1 - 289A Khuất Duy Tiến - Trung Hòa - Cầu Giấy - Hà Nội.
+								</p>
+							</div>
+						</div>
+						<div class="info-item place">
+							<img src="images/place-footer.svg" alt="place" />
+							<div class="place__text">
+								<h3>Chi nhánh phần mềm:</h3>
+								<p>
+									Tòa nhà Republic Plaza, số 18E, đường Cộng Hòa, quận Tân Bình, TP. Hồ Chí Minh.
+								</p>
+							</div>
+						</div>
+						<div class="info-item contact">
+							<div class="phone contact-item">
+								<img src="images/phone-footer.svg" alt="phone" />
+								<p>(84.274) 3743 898</p>
+							</div>
+							<div class="mail contact-item">
+								<img src="images/mail-footer.svg" alt="mail" />
+								<p>marketing@vsip.com.vn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<p>@ 2020 Copyright by VSIP</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal login -->
+	<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-head text-center">
+					<img src="images/bx_bxs-user-circle.svg" alt="">
+					<h3 class="mt-2">Đăng nhập</h3>
+				</div>
+				<form action="">
+					<div class="form-group">
+						<img src="images/fi_user.svg" alt="">
+						<input type="email" class="form-control" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<img src="images/fi_user.svg" alt="">
+						<input type="password" class="form-control" placeholder="Mật khẩu">
+					</div>
+					<button type="submit">Đăng nhập</button>
+				</form>
+				<div class="modal-footer">
+					<a href="forgot-password.html">Quên mật khẩu?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="./scripts/common.js"></script>
+</body>
+
+</html>

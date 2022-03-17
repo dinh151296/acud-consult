@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quản Lý Hồ Sơ Dự Án - Chi Tiết</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles/common/common.css" type="text/css">
+		<link
+			rel="stylesheet"
+			href="./styles/pages/project-management-detail/project-management-detail.css"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-main">
+					<a class="header-logo" href="./index.html">
+						<img src="./images/logo-header.png" alt="header-logo" />
+					</a>
+					<div class="header-content">
+						<ul id="menu-list" class="menu-list">
+							<li class="menu-item">
+								<a href="./index.html">Trang chủ</a>
+							</li>
+							<li class="menu-item drop-down">
+								<a href="#">Tra cứu dự án</a>
+	
+								<div class="drop-down-icon">
+									<svg
+										width="14"
+										height="14"
+										viewBox="0 0 14 14"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M3.5 5.25L7 8.75L10.5 5.25"
+											stroke="white"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+	
+								<ul class="drop-down-content">
+									<li class="drop-down-item">
+										<a href="project-total.html">Tổng hợp quy hoạch, dự án</a>
+									</li>
+									<li class="drop-down-item">
+										<a href="kcn.html">Quy hoạch chung</a>
+									</li>
+									<li class="drop-down-item">
+										<a href="kdt-dv.html">Quy hoạch phân khu</a>
+									</li>
+									<li class="drop-down-item">
+										<a href="kdt-dv.html">Quy hoạch chi tiết</a>
+									</li>
+									<li class="drop-down-item">
+										<a href="kdt-dv.html">Dự án đầu tư xây dựng Khu đô thị (KĐT)</a>
+									</li>
+									<li class="drop-down-item">
+										<a href="kdt-dv.html">Dự án đầu tư xây dựng Khu công nghiệp (KCN)</a>
+									</li>
+									<li class="drop-down-item">
+										<a href="kdt-dv.html">Dự án giao thông</a>
+									</li>
+									<li class="drop-down-item">
+										<a href="kdt-dv.html">Dự án kiến trúc</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item">
+								<a href="./project-manager.html"
+									>Quản lý hồ sơ dự án</a
+								>
+							</li>
+							<li class="menu-item">
+								<a href="news.html">Tin Tức</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Liên hệ</a>
+							</li>
+						</ul>
+						<div class="user" data-toggle="modal" data-target="#modal-login">
+							<svg
+								width="14"
+								height="16"
+								viewBox="0 0 14 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									class="icon"
+									d="M7 8C9.20938 8 11 6.20937 11 4C11 1.79063 9.20938 0 7 0C4.79063 0 3 1.79063 3 4C3 6.20937 4.79063 8 7 8ZM9.8 9H9.27812C8.58437 9.31875 7.8125 9.5 7 9.5C6.1875 9.5 5.41875 9.31875 4.72188 9H4.2C1.88125 9 0 10.8813 0 13.2V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V13.2C14 10.8813 12.1187 9 9.8 9Z"
+									fill="white"
+								/>
+							</svg>
+						</div>
+						<button id="burger-menu" class="burger-menu d-none">
+							<div></div>
+							<div class="mt-1 mb-1"></div>
+							<div></div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- Breadcrumb -->
+			<section class="breadcrumb">
+				<div class="container">
+					<div class="breadcrumb-container">
+						<h3 class="current">Quản lý hồ sơ dự án</h3>
+						<div class="breadcrumb-main">
+							<a href="./index.html" class="breadcrumb-item">Trang chủ</a>
+							<img
+								class="breadcrumb-icon"
+								src="./images/breadcrumb-icon.svg"
+								alt="breadcrumb"
+							/>
+							<a href="./project-manager.html" class="breadcrumb-item">
+								Quản lý hồ sơ dự án
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Detail -->
+			<section class="detail">
+				<div class="container">
+					<div class="detail-container">
+						<div class="detail-head">
+							<a class="back-to-history" href="./project-manager.html">
+								<img src="./images/back.svg" alt="back" />
+							</a>
+							<h5 class="detail-name">
+								Đồ án Quy hoạch khu liên hợp Công nghiệp - Đô thị và dịch vụ VSIP
+								Quảng Ngãi
+							</h5>
+						</div>
+						<div class="detail-content">
+							<div class="row">
+								<div class="col col-12 col-lg-6 col-md-12 col-sm-12">
+									<div class="content-left">
+										<div class="detail-tabs">
+											<ul class="nav nav-tabs">
+												<li>
+													<a
+														class="active show"
+														href="#profile-composition"
+														data-toggle="tab"
+														>Thành phần hồ sơ</a
+													>
+												</li>
+												<li>
+													<a href="#detail-info" data-toggle="tab"
+														>Thông tin chi tiết</a
+													>
+												</li>
+												<li>
+													<a href="#relate-profile" data-toggle="tab"
+														>Hồ sơ liên quan</a
+													>
+												</li>
+											</ul>
+										</div>
+										<div class="tab-content detail-tab-content">
+											<div
+												id="profile-composition"
+												class="tab-pane show active fade in"
+											>
+												<div class="profile-item">
+													<img
+														class="img"
+														src="./images/pdf.svg"
+														alt=""
+													/>
+													<div class="info">
+														<h5 class="title">
+															Quyết định phê duyệt Quy hoạch.pdf
+														</h5>
+														<div class="download">
+															<a
+																href="#"
+																download
+																class="download-item preview"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File preview</span>
+															</a>
+															<a
+																href="#"
+																download
+																class="download-item file"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File gốc</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="profile-item">
+													<img
+														class="img"
+														src="./images/pdf.svg"
+														alt=""
+													/>
+													<div class="info">
+														<h5 class="title">
+															Quyết định phê duyệt Quy hoạch.pdf
+														</h5>
+														<div class="download">
+															<a
+																href="#"
+																download
+																class="download-item preview"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File preview</span>
+															</a>
+															<a
+																href="#"
+																download
+																class="download-item file"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File gốc</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="profile-item">
+													<img
+														class="img"
+														src="./images/pdf.svg"
+														alt=""
+													/>
+													<div class="info">
+														<h5 class="title">
+															Quyết định phê duyệt Quy hoạch.pdf
+														</h5>
+														<div class="download">
+															<a
+																href="#"
+																download
+																class="download-item preview"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File preview</span>
+															</a>
+															<a
+																href="#"
+																download
+																class="download-item file"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File gốc</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="detail-info" class="tab-pane fade in">
+												<p>Đang cập nhật...</p>
+											</div>
+											<div id="relate-profile" class="tab-pane fade in">
+												<div class="project-item">
+													<img
+														class="rar"
+														src="./images/rar.png"
+														alt="rar"
+													/>
+													<div class="item-info">
+														<div class="title">
+															Điều chỉnh quy hoạch Khu công nghiệp, Đô
+															thị và Dịch vụ VSIP Nghệ An
+														</div>
+														<div class="time">
+															<img
+																src="./images/clock.svg"
+																alt="clock"
+															/>
+															<span>01/01/2020</span>
+														</div>
+														<div class="download">
+															<a
+																href="#"
+																download
+																class="download-item preview"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File preview</span>
+															</a>
+															<a
+																href="#"
+																download
+																class="download-item file"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File gốc</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="project-item">
+													<img
+														class="rar"
+														src="./images/rar.png"
+														alt="rar"
+													/>
+													<div class="item-info">
+														<div class="title">
+															Quy hoạch Đô thị, Khu công nghiệp và
+															Dịch vụ Becamex VSIP Bình Định
+														</div>
+														<div class="time">
+															<img
+																src="./images/clock.svg"
+																alt="clock"
+															/>
+															<span>01/01/2020</span>
+														</div>
+														<div class="download">
+															<a
+																href="#"
+																download
+																class="download-item preview"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File preview</span>
+															</a>
+															<a
+																href="#"
+																download
+																class="download-item file"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File gốc</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="project-item">
+													<img
+														class="rar"
+														src="./images/rar.png"
+														alt="rar"
+													/>
+													<div class="item-info">
+														<div class="title">
+															Quy hoạch Đô thị, Khu công nghiệp và
+															Dịch vụ VSIP II Bình Dương
+														</div>
+														<div class="time">
+															<img
+																src="./images/clock.svg"
+																alt="clock"
+															/>
+															<span>01/01/2020</span>
+														</div>
+														<div class="download">
+															<a
+																href="#"
+																download
+																class="download-item preview"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File preview</span>
+															</a>
+															<a
+																href="#"
+																download
+																class="download-item file"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File gốc</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="project-item">
+													<img
+														class="rar"
+														src="./images/rar.png"
+														alt="rar"
+													/>
+													<div class="item-info">
+														<div class="title">
+															Quy hoạch Đô thị, Khu công nghiệp và
+															Dịch vụ VSIP II Bắc Ninh
+														</div>
+														<div class="time">
+															<img
+																src="./images/clock.svg"
+																alt="clock"
+															/>
+															<span>01/01/2020</span>
+														</div>
+														<div class="download">
+															<a
+																href="#"
+																download
+																class="download-item preview"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File preview</span>
+															</a>
+															<a
+																href="#"
+																download
+																class="download-item file"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File gốc</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="project-item">
+													<img
+														class="rar"
+														src="./images/rar.png"
+														alt="rar"
+													/>
+													<div class="item-info">
+														<div class="title">
+															Quy hoạch Đô thị, Khu công nghiệp và
+															Dịch vụ VSIP Quảng Trị
+														</div>
+														<div class="time">
+															<img
+																src="./images/clock.svg"
+																alt="clock"
+															/>
+															<span>01/01/2020</span>
+														</div>
+														<div class="download">
+															<a
+																href="#"
+																download
+																class="download-item preview"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File preview</span>
+															</a>
+															<a
+																href="#"
+																download
+																class="download-item file"
+															>
+																<img
+																	src="./images/download.svg"
+																	alt="download"
+																/>
+																<span>File gốc</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="pagi">
+													<div class="pagi-container">
+														<button class="super-prev">
+															<svg
+																width="16"
+																height="16"
+																viewBox="0 0 16 16"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg"
+															>
+																<path
+																	d="M13 4L9 8L13 12"
+																	stroke="#484848"
+																	stroke-linecap="round"
+																	stroke-linejoin="round"
+																/>
+																<path
+																	d="M7 4L3 8L7 12"
+																	stroke="#484848"
+																	stroke-linecap="round"
+																	stroke-linejoin="round"
+																/>
+															</svg>
+														</button>
+														<button class="super-prev">
+															<svg
+																width="6"
+																height="10"
+																viewBox="0 0 6 10"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg"
+															>
+																<path
+																	d="M5 1L1 5L5 9"
+																	stroke="#484848"
+																	stroke-linecap="round"
+																	stroke-linejoin="round"
+																/>
+															</svg>
+														</button>
+														<button class="count active">1</button>
+														<button class="count">2</button>
+														<button class="next">
+															<svg
+																width="6"
+																height="10"
+																viewBox="0 0 6 10"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg"
+															>
+																<path
+																	d="M1 9L5 5L1 1"
+																	stroke="#484848"
+																	stroke-linecap="round"
+																	stroke-linejoin="round"
+																/>
+															</svg>
+														</button>
+														<button class="next">
+															<svg
+																width="16"
+																height="16"
+																viewBox="0 0 16 16"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg"
+															>
+																<path
+																	d="M3 12L7 8L3 4"
+																	stroke="#484848"
+																	stroke-linecap="round"
+																	stroke-linejoin="round"
+																/>
+																<path
+																	d="M9 12L13 8L9 4"
+																	stroke="#484848"
+																	stroke-linecap="round"
+																	stroke-linejoin="round"
+																/>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col col-12 col-lg-6 col-md-12 col-sm-12">
+									<div class="content-right">
+										<img src="./images/pdf-img.png" alt="pdf" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="top-main">
+						<div class="footer__logo">
+							<img class="logo" src="./images/logo-footer.png" alt="logo-footer" />
+						</div>
+						<div class="info">
+							<div class="info-item place">
+								<img src="images/place-footer.svg" alt="place" />
+								<div class="place__text">
+									<h3>Trụ sở chính:</h3>
+									<p>
+										Tầng 1 Nhà E - Vinaconex 1 - 289A Khuất Duy Tiến - Trung Hòa - Cầu Giấy - Hà Nội.
+									</p>
+								</div>
+							</div>
+							<div class="info-item place">
+								<img src="images/place-footer.svg" alt="place" />
+								<div class="place__text">
+									<h3>Chi nhánh phần mềm:</h3>
+									<p>
+										Tòa nhà Republic Plaza, số 18E, đường Cộng Hòa, quận Tân Bình, TP. Hồ Chí Minh.
+									</p>
+								</div>
+							</div>
+							<div class="info-item contact">
+								<div class="phone contact-item">
+									<img src="images/phone-footer.svg" alt="phone" />
+									<p>(84.274) 3743 898</p>
+								</div>
+								<div class="mail contact-item">
+									<img src="images/mail-footer.svg" alt="mail" />
+									<p>marketing@vsip.com.vn</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<p>@ 2020 Copyright by VSIP</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Modal login -->
+		<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-head text-center">
+						<img src="images/bx_bxs-user-circle.svg" alt="">
+						<h3 class="mt-2">Đăng nhập</h3>
+					</div>
+					<form action="">
+						<div class="form-group">
+							<img src="images/fi_user.svg" alt="">
+							<input type="email" class="form-control" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<img src="images/fi_user.svg" alt="">
+							<input type="password" class="form-control" placeholder="Mật khẩu">
+						</div>
+						<button type="submit">Đăng nhập</button>
+					</form>
+					<div class="modal-footer">
+						<a href="forgot-password.html">Quên mật khẩu?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script src="./scripts/common.js"></script>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+/* intro style */
+
+
+section.card-list {
+  margin-top: 40px;
+}
+section.card-list .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+@media only screen and (max-width: 767px) {
+  section.card-list .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+section.card-list .video-ytb {
+  margin-top: 40px;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 70px;
+}
+@media only screen and (max-width: 767px) {
+  section.card-list .video-ytb {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 45px;
+  }
+}
+section.card-list .video-ytb iframe {
+  width: 100%;
+  height: 615px;
+}
+@media only screen and (max-width: 767px) {
+  section.card-list .video-ytb iframe {
+    max-height: 240px;
+  }
+}
+section.card-list .card__item {
+  margin-left: -5px;
+  margin-right: -5px;
+  background-color: #F8FCFF;
+  border-radius: 3px;
+  padding: 50px 30px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.2s;
+  border: 1px solid #CCCCCC;
+  min-height: 300px;
+}
+@media only screen and (max-width: 767px) {
+  section.card-list .card__item {
+    height: auto;
+    min-height: 255px;
+    padding: 30px 20px !important;
+    justify-content: space-around;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+}
+section.card-list .card__item:hover {
+  background-color: #1a77c7;
+  color: #ffffff;
+}
+section.card-list .card__item:hover .card__img > svg path {
+  fill: #fff;
+}
+section.card-list .card__item .card__img {
+  max-width: 68px;
+  margin-bottom: 20px;
+}
+section.card-list .card__item .card__img > svg {
+  transition: 0.2s;
+}
+section.card-list .card__item .card__body > span {
+  display: block;
+  font-weight: 900;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+section.card-list .card__item .card__body > p {
+  font-size: 14px;
+  font-weight: 300;
+}
+section.card-list .card__item .card__body > h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+section.card-list .card__item-last {
+  padding-bottom: 50px;
+}
+
+/*# sourceMappingURL=intro.css.map */

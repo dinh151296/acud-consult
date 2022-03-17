@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức - Chi tiết</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/common/common.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/pages/news/new.css" type="text/css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <a class="header-logo" href="./index.html">
+                    <img src="./images/logo-header.png" alt="header-logo" />
+                </a>
+                <div class="header-content">
+                    <ul id="menu-list" class="menu-list">
+                        <li class="menu-item">
+                            <a href="./index.html">Trang chủ</a>
+                        </li>
+                        <li class="menu-item drop-down">
+                            <a href="#">Tra cứu dự án</a>
+
+                            <div class="drop-down-icon">
+                                <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M3.5 5.25L7 8.75L10.5 5.25"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+
+                            <ul class="drop-down-content">
+                                <li class="drop-down-item">
+                                    <a href="project-total.html">Tổng hợp quy hoạch, dự án</a>
+                                </li>
+                                <li class="drop-down-item">
+                                    <a href="kcn.html">Quy hoạch chung</a>
+                                </li>
+                                <li class="drop-down-item">
+                                    <a href="kdt-dv.html">Quy hoạch phân khu</a>
+                                </li>
+                                <li class="drop-down-item">
+                                    <a href="kdt-dv.html">Quy hoạch chi tiết</a>
+                                </li>
+                                <li class="drop-down-item">
+                                    <a href="kdt-dv.html">Dự án đầu tư xây dựng Khu đô thị (KĐT)</a>
+                                </li>
+                                <li class="drop-down-item">
+                                    <a href="kdt-dv.html">Dự án đầu tư xây dựng Khu công nghiệp (KCN)</a>
+                                </li>
+                                <li class="drop-down-item">
+                                    <a href="kdt-dv.html">Dự án giao thông</a>
+                                </li>
+                                <li class="drop-down-item">
+                                    <a href="kdt-dv.html">Dự án kiến trúc</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./project-manager.html"
+                                >Quản lý hồ sơ dự án</a
+                            >
+                        </li>
+                        <li class="menu-item">
+                            <a href="news.html">Tin Tức</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <div class="user" data-toggle="modal" data-target="#modal-login">
+                        <svg
+                            width="14"
+                            height="16"
+                            viewBox="0 0 14 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                class="icon"
+                                d="M7 8C9.20938 8 11 6.20937 11 4C11 1.79063 9.20938 0 7 0C4.79063 0 3 1.79063 3 4C3 6.20937 4.79063 8 7 8ZM9.8 9H9.27812C8.58437 9.31875 7.8125 9.5 7 9.5C6.1875 9.5 5.41875 9.31875 4.72188 9H4.2C1.88125 9 0 10.8813 0 13.2V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V13.2C14 10.8813 12.1187 9 9.8 9Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    <button id="burger-menu" class="burger-menu d-none">
+                        <div></div>
+                        <div class="mt-1 mb-1"></div>
+                        <div></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <div class="breadcrumb-container">
+                    <h3 class="current">Tin tức</h3>
+                    <div class="breadcrumb-main">
+                        <a href="./index.html" class="breadcrumb-item">Trang chủ</a>
+                        <img class="breadcrumb-icon" src="./images/breadcrumb-icon.svg" alt="breadcrumb" />
+                        <a href="" class="breadcrumb-item">
+                            Tin tức
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrap__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="new__detail-content">
+                            <div class="thumb">
+                                <img src="images/new-detail.jpg" alt="">
+                                <h3>VSIP JSC THẮNG LỚN TẠI LỄ TRAO GIẢI GURU PROPERTY 2020</h3>
+                            </div>
+                            <p>TP Hồ Chí Minh - Ngày 09 tháng 10 năm 2020 - VSIP JSC đã về đích ngoạn mục tại Lễ trao
+                                Giải thưởng Bất động sản Việt Nam 2020 (PropertyGuru Vietnam Property Awards 2020) với 6
+                                giải thưởng trong đó hạng mục “Nhà phát triển Bất động sản bền vững nhất Việt Nam 2020
+                                (Best Sustainable Developer)” là hạng mục cao quý trong 49 hạng mục tranh tài năm nay.
+                                Tại Lễ trao giải thưởng Bất động sản Việt Nam – Vietnam Property Awards 2020, VSIP JSC
+                                được vinh danh là “Nhà phát triển bất động sản bền vững nhất Việt Nam 2020”. Ngoài giải
+                                thưởng cao quý này, VSIP JSC còn vinh dự nhận được 2 giải “Công nhận đặc biệt” dành cho
+                                những đóng góp về “Xây dựng công trình bền vững (Special Recognition in Sustainable
+                                Construction)” và “Môi trường – Xã hội – Quản trị doanh nghiệp (Special Recognition in
+                                ESG)”.
+                            </p>
+                            <figure>
+                                <img src="images/new-detail02.jpg" alt="">
+                            </figure>
+                            <p>Công ty TNHH VSIP Bắc Ninh với sản phẩm mới là Nhà xưởng cao tầng xây sẵn (High-Rise RBF)
+                                đã giành chiến thắng với giải “Dự án thương mại xanh tốt nhất 2020”. Đây là giải thưởng
+                                thứ ba được trao cho Dự án này. Trước đó, tại Gala công bố giải thưởng Dot Property
+                                Vietnam Awards 2020 vào tháng 7 năm 2020, Dự án xuất sắc được vinh danh “Nhà xưởng công
+                                nghiệp xanh tốt nhất” (Best Green Industrial Building) và “Dự án thương mại phát triển
+                                bền vững tốt nhất” (Best Sustainable Commercial Development). Dự án cũng đạt “Chứng chỉ
+                                Công trình Xanh EDGE” do Tổ chức Tài chính Quốc tế (IFC) và SGS Việt Nam cấp, tạo nên
+                                lợi thế cạnh tranh so với các nhà đầu tư khác.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="title-row d-flex justify-content-between">
+                            <h2 class="title">TIN TỨC KHÁC</h2>
+                            <a class="d-flex align-items-center" href="">Xem thêm
+                                <img src="images/arrow-right.svg" alt="" />
+                            </a>
+                        </div>
+                        <div class="ohter__news">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <div class="other-new__item">
+                                        <div class="img">
+                                            <a href="new-detail.html">
+                                                <img src="images/new05.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h3 class="title">
+                                            <a href="new-detail.html">VSSES KHAI TRƯƠNG TRỤ SỞ CHÍNH TẠI BÌNH DƯƠNG</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <div class="other-new__item">
+                                        <div class="img">
+                                            <a href="new-detail.html">
+                                                <img src="images/new06.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h3 class="title">
+                                            <a href="new-detail.html">VSIP HẢI PHÒNG – HÀNH TRÌNH MỘT THẬP KỶ PHÁT TRIỂN </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <div class="other-new__item">
+                                        <div class="img">
+                                            <a href="new-detail.html">
+                                                <img src="images/new07.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h3 class="title">
+                                            <a href="new-detail.html">VSIP NGHỆ AN TỔ CHỨC THÀNH CÔNG HỘI NGHỊ KẾT NỐI DOANH NGHIỆP NĂM 2020</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <div class="other-new__item">
+                                        <div class="img">
+                                            <a href="new-detail.html">
+                                                <img src="images/new08.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h3 class="title">
+                                            <a href="new-detail.html">THE HABITAT BÌNH DƯƠNG ĐƯỢC VINH DANH TẠI VIETNAM PROPERTY AWARDS</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="top-main">
+                    <div class="footer__logo">
+                        <img class="logo" src="./images/logo-footer.png" alt="logo-footer" />
+                    </div>
+                    <div class="info">
+                        <div class="info-item place">
+                            <img src="images/place-footer.svg" alt="place" />
+                            <div class="place__text">
+                                <h3>Trụ sở chính:</h3>
+                                <p>
+                                    Tầng 1 Nhà E - Vinaconex 1 - 289A Khuất Duy Tiến - Trung Hòa - Cầu Giấy - Hà Nội.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-item place">
+                            <img src="images/place-footer.svg" alt="place" />
+                            <div class="place__text">
+                                <h3>Chi nhánh phần mềm:</h3>
+                                <p>
+                                    Tòa nhà Republic Plaza, số 18E, đường Cộng Hòa, quận Tân Bình, TP. Hồ Chí Minh.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-item contact">
+                            <div class="phone contact-item">
+                                <img src="images/phone-footer.svg" alt="phone" />
+                                <p>(84.274) 3743 898</p>
+                            </div>
+                            <div class="mail contact-item">
+                                <img src="images/mail-footer.svg" alt="mail" />
+                                <p>marketing@vsip.com.vn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>@ 2020 Copyright by VSIP</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal login -->
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-head text-center">
+                    <img src="images/bx_bxs-user-circle.svg" alt="">
+                    <h3 class="mt-2">Đăng nhập</h3>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <img src="images/fi_user.svg" alt="">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <img src="images/fi_user.svg" alt="">
+                        <input type="password" class="form-control" placeholder="Mật khẩu">
+                    </div>
+                    <button type="submit">Đăng nhập</button>
+                </form>
+                <div class="modal-footer">
+                    <a href="forgot-password.html">Quên mật khẩu?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="./scripts/common.js"></script>
+
+</body>
+
+</html>

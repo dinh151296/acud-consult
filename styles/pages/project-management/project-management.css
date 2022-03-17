@@ -1,0 +1,236 @@
+/* project management style */
+
+.project-management {
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+.project-management-container .head-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.project-management-container .head-search-select {
+  height: 38px;
+  width: 238px;
+  border-radius: 2px;
+  border: 0.75px solid #484848;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #8f8f8f;
+}
+.project-management-container .head-search-select * {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+.project-management-container .head-search-select.custom-select {
+  background-image: url("../../../images/select-icon.svg");
+  position: relative;
+}
+.project-management-container .head-search-input {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  height: 38px;
+  max-width: 368px;
+  border-radius: 2px;
+  width: 100%;
+}
+.project-management-container .head-search-input input {
+  height: 100%;
+  border: 0.75px solid #484848;
+  border-right: none;
+  padding: 8px 10px;
+  color: #8f8f8f;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.project-management-container .head-search-input button {
+  line-height: 38px;
+  margin-left: -2px;
+  border-bottom-left-radius: unset;
+  border-top-left-radius: unset;
+}
+@media only screen and (max-width: 1200px) {
+  .project-management-container .head-search {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .project-management-container .head-search-select {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .project-management-container .head-search {
+    flex-direction: column;
+  }
+  .project-management-container .head-search-select {
+    margin: 0 0 5px;
+    width: 100%;
+  }
+  .project-management-container .head-search-input {
+    max-width: 100%;
+  }
+}
+.project-management-container .project-management-main {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .project-management-container .project-management-main {
+    margin-top: 25px;
+  }
+}
+.project-management-container .project-management-main .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.project-management-container .project-management-main .row .col {
+  padding: 0 10px;
+}
+.project-management-container .project-management-main .project-item {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.project-management-container .project-management-main .project-item .rar {
+  width: 174px;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 640px) {
+  .project-management-container .project-management-main .project-item .rar {
+    width: unset;
+    max-width: 120px;
+    margin-right: 10px;
+  }
+}
+.project-management-container .project-management-main .project-item .item-info .title {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19px;
+}
+@media only screen and (max-width: 640px) {
+  .project-management-container .project-management-main .project-item .item-info .title {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .project-management-container .project-management-main .project-item .item-info .title {
+    line-height: unset;
+  }
+}
+.project-management-container .project-management-main .project-item .item-info .time {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+.project-management-container .project-management-main .project-item .item-info .time img {
+  margin-right: 4px;
+}
+.project-management-container .project-management-main .project-item .item-info .time span {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 16px;
+}
+@media only screen and (max-width: 640px) {
+  .project-management-container .project-management-main .project-item .item-info .time {
+    margin-top: 5px;
+  }
+  .project-management-container .project-management-main .project-item .item-info .time span {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .project-management-container .project-management-main .project-item .item-info .time {
+    margin-top: 5px;
+  }
+}
+.project-management-container .project-management-main .project-item .item-info .download {
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+.project-management-container .project-management-main .project-item .item-info .download-item {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin-right: 28px;
+  cursor: pointer;
+}
+.project-management-container .project-management-main .project-item .item-info .download-item:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in;
+}
+.project-management-container .project-management-main .project-item .item-info .download-item img {
+  margin-right: 5px;
+}
+.project-management-container .project-management-main .project-item .item-info .download-item span {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 16px;
+  color: #359AE1;
+  text-decoration: underline;
+}
+.project-management-container .project-management-main .project-item .item-info .download .download-item + .download-item {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 640px) {
+  .project-management-container .project-management-main .project-item .item-info .download {
+    margin-top: 8px;
+  }
+  .project-management-container .project-management-main .project-item .item-info .download-item {
+    margin-right: 0;
+  }
+  .project-management-container .project-management-main .project-item .item-info .download-item img {
+    margin-right: 2px;
+  }
+  .project-management-container .project-management-main .project-item .item-info .download-item span {
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: unset;
+    white-space: nowrap;
+  }
+}
+@media only screen and (max-width: 640px) and (max-width: 400px) {
+  .project-management-container .project-management-main .project-item .item-info .download-item {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .project-management-container .project-management-main .project-item .item-info .download {
+    margin-top: 2px;
+    flex-direction: column;
+  }
+  .project-management-container .project-management-main .project-item .item-info .download .download-item + .download-item {
+    margin-left: 0;
+    margin-top: 2px;
+  }
+}
+.project-management-container .project-management-main .pagi {
+  margin: 24px 0 70px;
+}
+@media only screen and (max-width: 768px) {
+  .project-management-container .project-management-main .pagi {
+    margin: 15px 0 50px;
+  }
+}
+@media only screen and (max-width: 640) {
+  .project-management-container .project-management-main .pagi {
+    margin: 15px 0 30px;
+  }
+}
+
+/*# sourceMappingURL=project-management.css.map */

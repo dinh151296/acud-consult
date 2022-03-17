@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./images/shortcutsvg.svg"
+            type="image/x-icon"
+        />
+        <title>VSIP</title>
+        
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./styles/common/common.css" type="text/css" />
+        <link rel="stylesheet" href="./styles/pages/home/home.css" type="text/css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+                    <a class="header-logo" href="./index.html">
+                        <img src="./images/logo-header.png" alt="header-logo" />
+                    </a>
+                    <div class="header-content">
+                        <ul id="menu-list" class="menu-list">
+                            <li class="menu-item">
+                                <a href="./index.html">Trang chủ</a>
+                            </li>
+                            <li class="menu-item drop-down">
+                                <a href="#">Tra cứu dự án</a>
+
+                                <div class="drop-down-icon">
+                                    <svg
+                                        width="14"
+                                        height="14"
+                                        viewBox="0 0 14 14"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M3.5 5.25L7 8.75L10.5 5.25"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <ul class="drop-down-content">
+                                    <li class="drop-down-item">
+                                        <a href="project-total.html">Tổng hợp quy hoạch, dự án</a>
+                                    </li>
+                                    <li class="drop-down-item">
+                                        <a href="kcn.html">Quy hoạch chung</a>
+                                    </li>
+                                    <li class="drop-down-item">
+                                        <a href="kdt-dv.html">Quy hoạch phân khu</a>
+                                    </li>
+                                    <li class="drop-down-item">
+                                        <a href="kdt-dv.html">Quy hoạch chi tiết</a>
+                                    </li>
+                                    <li class="drop-down-item">
+                                        <a href="kdt-dv.html">Dự án đầu tư xây dựng Khu đô thị (KĐT)</a>
+                                    </li>
+                                    <li class="drop-down-item">
+                                        <a href="kdt-dv.html">Dự án đầu tư xây dựng Khu công nghiệp (KCN)</a>
+                                    </li>
+                                    <li class="drop-down-item">
+                                        <a href="kdt-dv.html">Dự án giao thông</a>
+                                    </li>
+                                    <li class="drop-down-item">
+                                        <a href="kdt-dv.html">Dự án kiến trúc</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./project-manager.html"
+                                    >Quản lý hồ sơ dự án</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="news.html">Tin Tức</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <div class="user" data-toggle="modal" data-target="#modal-login">
+                            <svg
+                                width="14"
+                                height="16"
+                                viewBox="0 0 14 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    class="icon"
+                                    d="M7 8C9.20938 8 11 6.20937 11 4C11 1.79063 9.20938 0 7 0C4.79063 0 3 1.79063 3 4C3 6.20937 4.79063 8 7 8ZM9.8 9H9.27812C8.58437 9.31875 7.8125 9.5 7 9.5C6.1875 9.5 5.41875 9.31875 4.72188 9H4.2C1.88125 9 0 10.8813 0 13.2V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V13.2C14 10.8813 12.1187 9 9.8 9Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        <button id="burger-menu" class="burger-menu d-none">
+                            <div></div>
+                            <div class="mt-1 mb-1"></div>
+                            <div></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="eyecatch">
+                <div class="wrap d-flex align-items-center flex-wrap">
+                    <div class="eyecatch__l d-flex flex-column">
+                        <h1>Ứng Dụng Quản Lý Dự Án</h1>
+                        <ul class="option d-flex align-items-center">
+                            <li>
+                                <a href="">
+                                    <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46Z" />
+                                        <path d="M21.9167 30.5833C26.7031 30.5833 30.5833 26.7031 30.5833 21.9167C30.5833 17.1302 26.7031 13.25 21.9167 13.25C17.1302 13.25 13.25 17.1302 13.25 21.9167C13.25 26.7031 17.1302 30.5833 21.9167 30.5833Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M32.75 32.75L28.0375 28.0375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46Z" fill="white"/>
+                                        <path d="M29.1336 23.8451L33.0766 19.9021" stroke="#F24949" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M33.0766 23.8451L29.1336 19.9021" stroke="#F24949" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.8639 13.1429V31.3557H33.0767" stroke="#F24949" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17.6804 15.9593L14.864 13.1429L12.0476 15.9593" stroke="#F24949" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M30.2601 34.1722L33.0765 31.3557L30.2601 28.5393" stroke="#F24949" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M22.3743 17.2734V15.2081" stroke="#F24949" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M24.4397 13.1429L22.3744 15.2082L20.4968 13.1429" stroke="#F24949" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <svg
+                                        width="46"
+                                        height="46"
+                                        viewBox="0 0 46 46"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46Z"
+                                        />
+                                        <path
+                                            d="M31.7619 21.0087C31.7619 27.9784 23 33.9524 23 33.9524C23 33.9524 14.2381 27.9784 14.2381 21.0087C14.2381 18.632 15.1612 16.3528 16.8044 14.6723C18.4476 12.9917 20.6762 12.0476 23 12.0476C25.3238 12.0476 27.5524 12.9917 29.1956 14.6723C30.8388 16.3528 31.7619 18.632 31.7619 21.0087Z"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M23 24.0952C24.8147 24.0952 26.2857 22.6242 26.2857 20.8095C26.2857 18.9949 24.8147 17.5238 23 17.5238C21.1854 17.5238 19.7143 18.9949 19.7143 20.8095C19.7143 22.6242 21.1854 24.0952 23 24.0952Z"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <svg
+                                        width="46"
+                                        height="46"
+                                        viewBox="0 0 46 46"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46Z"
+                                        />
+                                        <path
+                                            d="M23 32.8571C28.4439 32.8571 32.8571 28.444 32.8571 23C32.8571 17.5561 28.4439 13.1429 23 13.1429C17.556 13.1429 13.1429 17.5561 13.1429 23C13.1429 28.444 17.556 32.8571 23 32.8571Z"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-miterlimit="10"
+                                        />
+                                        <path
+                                            d="M23 13.1429V9.85715"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-miterlimit="10"
+                                            stroke-linecap="round"
+                                        />
+                                        <path
+                                            d="M23 36.1429V32.8571"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-miterlimit="10"
+                                            stroke-linecap="round"
+                                        />
+                                        <path
+                                            d="M13.1429 23H9.85715"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-miterlimit="10"
+                                            stroke-linecap="round"
+                                        />
+                                        <path
+                                            d="M36.1429 23H32.8571"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-miterlimit="10"
+                                            stroke-linecap="round"
+                                        />
+                                        <path
+                                            d="M23 27.381C25.4195 27.381 27.381 25.4195 27.381 23C27.381 20.5805 25.4195 18.619 23 18.619C20.5805 18.619 18.619 20.5805 18.619 23C18.619 25.4195 20.5805 27.381 23 27.381Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <form action="">
+                            <div class="form-group">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Nhập tên Quy hoạch - Dự án"
+                                />
+                                <img src="images/fi_arrow-right.png" alt="" />
+                            </div>
+                        </form>
+                        <ul class="project d-flex align-items-center">
+                            <li>
+                                <a href="">
+                                    <div class="img">
+                                        <img
+                                            src="images/eyecatch03-inner.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span>Tra cứu dự án</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img">
+                                        <img
+                                            src="images/eyecatch04-inner.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span>QL hồ sơ dự án</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="eyecatch__r">
+                        <img src="images/map-vietnam-011.png" alt="" />
+                    </div>
+                </div>
+            </section>
+            <section class="wrap-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="title-row d-flex justify-content-between">
+                                <h2 class="title">TIN MỚI NHẤT</h2>
+                                <a class="d-flex align-items-center" href="news.html">Xem thêm
+                                    <img src="images/arrow-right.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new__list">
+                        <div class="row align-items-stretch row-custom">
+                            <div class="col-12 col-sm-6 col-lg-3 col-custom">
+                                <div class="new__item">
+                                    <div class="img">
+                                        <a href="new-detail.html">
+                                            <img src="images/new01.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <h3>
+                                            <a href="new-detail.html">VSIP JSC THẮNG LỚN TẠI LỄ TRAO
+                                                GIẢI GURU PROPERTY 2020</a>
+                                        </h3>
+                                        <div class="date">
+                                            <img src="./images/calendar.png" alt="">
+                                            <span>01-01-2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 col-custom">
+                                <div class="new__item">
+                                    <div class="img">
+                                        <a href="new-detail.html">
+                                            <img src="images/new02.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <h3>
+                                            <a href="new-detail.html">CÔNG TY TNHH MỘT THÀNH VIÊN
+                                                PHÁT TRIỂN CÔNG NGHIỆP VÀ HẬU
+                                                CẦN BW TÂN UYÊN</a>
+                                        </h3>
+                                        <div class="date">
+                                            <img src="./images/calendar.png" alt="">
+                                            <span>01-01-2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 col-custom">
+                                <div class="new__item">
+                                    <div class="img">
+                                        <a href="new-detail.html">
+                                            <img src="images/new03.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <h3>
+                                            <a href="new-detail.html">GIẢI GOLF TỪ THIỆN VSIP MIỀN
+                                                BẮC QUYÊN GÓP GẦN 400 TRIỆU
+                                                ĐỒNG</a>
+                                        </h3>
+                                        <div class="date">
+                                            <img src="./images/calendar.png" alt="">
+                                            <span>01-01-2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 col-custom">
+                                <div class="new__item">
+                                    <div class="img">
+                                        <a href="new-detail.html">
+                                            <img src="images/new04.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <h3>
+                                            <a href="new-detail.html">VSIP QUẢNG NGÃI CHUNG TAY HỖ
+                                                TRỢ KHẮC PHỤC HẬU QUẢ BÃO SỐ
+                                                9</a>
+                                        </h3>
+                                        <div class="date">
+                                            <img src="./images/calendar.png" alt="">
+                                            <span>01-01-2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="top-main">
+                        <div class="footer__logo">
+                            <img class="logo" src="./images/logo-footer.png" alt="logo-footer" />
+                        </div>
+                        <div class="info">
+                            <div class="info-item place">
+                                <img src="images/place-footer.svg" alt="place" />
+                                <div class="place__text">
+                                    <h3>Trụ sở chính:</h3>
+                                    <p>
+                                        Tầng 1 Nhà E - Vinaconex 1 - 289A Khuất Duy Tiến - Trung Hòa - Cầu Giấy - Hà Nội.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info-item place">
+                                <img src="images/place-footer.svg" alt="place" />
+                                <div class="place__text">
+                                    <h3>Chi nhánh phần mềm:</h3>
+                                    <p>
+                                        Tòa nhà Republic Plaza, số 18E, đường Cộng Hòa, quận Tân Bình, TP. Hồ Chí Minh.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info-item contact">
+                                <div class="phone contact-item">
+                                    <img src="images/phone-footer.svg" alt="phone" />
+                                    <p>(84.274) 3743 898</p>
+                                </div>
+                                <div class="mail contact-item">
+                                    <img src="images/mail-footer.svg" alt="mail" />
+                                    <p>marketing@vsip.com.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p>@ 2020 Copyright by VSIP</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal login -->
+        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-head text-center">
+                        <img src="images/bx_bxs-user-circle.svg" alt="">
+                        <h3 class="mt-2">Đăng nhập</h3>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <img src="images/fi_user.svg" alt="">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <img src="images/fi_user.svg" alt="">
+                            <input type="password" class="form-control" placeholder="Mật khẩu">
+                        </div>
+                        <button type="submit">Đăng nhập</button>
+                    </form>
+                    <div class="modal-footer">
+                        <a href="forgot-password.html">Quên mật khẩu?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./scripts/common.js"></script>
+    </body>
+</html>
